@@ -1,0 +1,882 @@
+/* =====================================================
+   BASIC SETTINGS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f2;
+    color: #26352c;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   HEADER / HERO SECTION
+===================================================== */
+
+header {
+    min-height: 600px;
+
+    background-image:
+        linear-gradient(
+            rgba(10, 45, 25, 0.65),
+            rgba(10, 45, 25, 0.65)
+        ),
+        url("images/karnataka.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.header-content {
+    max-width: 850px;
+    padding: 30px;
+}
+
+.small-title {
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.header-content h1 {
+    font-size: 65px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.header-content > p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    display: inline-block;
+
+    background-color: #d69b28;
+    color: white;
+
+    padding: 13px 30px;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #b77c12;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav {
+    background-color: #123d2a;
+
+    min-height: 65px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e6b74b;
+}
+
+
+/* =====================================================
+   COMMON SECTION SETTINGS
+===================================================== */
+
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title p {
+    color: #c48a1a;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    color: #164c31;
+    font-size: 38px;
+}
+
+.section-title span {
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    background-color: #c48a1a;
+
+    margin: 15px auto;
+}
+
+.section-intro {
+    max-width: 800px;
+
+    text-align: center;
+
+    margin: 0 auto 40px;
+
+    color: #59645d;
+}
+
+
+/* =====================================================
+   ABOUT KARNATAKA
+===================================================== */
+
+.about-section {
+    background-color: white;
+}
+
+.about-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.about-text h3 {
+    color: #164c31;
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.facts-box {
+    background-color: #edf4ee;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #164c31;
+}
+
+.facts-box h3 {
+    color: #164c31;
+    margin-bottom: 20px;
+}
+
+.fact {
+    display: flex;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #ccd8ce;
+
+    padding: 13px 0;
+}
+
+.fact:last-child {
+    border-bottom: none;
+}
+
+.fact strong {
+    color: #355641;
+}
+
+.fact span {
+    color: #666;
+}
+
+
+/* =====================================================
+   TOURIST PLACES
+===================================================== */
+
+.places-section {
+    background-color: #f1f5f0;
+}
+
+.cards {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.place-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.13);
+}
+
+.card-number {
+    color: #d09a25;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.place-card h3 {
+    color: #164c31;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.place-card p {
+    color: #626862;
+
+    margin-bottom: 20px;
+}
+
+.place-card a {
+    color: #164c31;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.place-card a:hover {
+    color: #c48a1a;
+}
+
+
+/* =====================================================
+   HISTORICAL PLACES
+===================================================== */
+
+.history-section {
+    background-color: white;
+}
+
+.history-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.history-card {
+    background-color: #f6f8f4;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border-top: 4px solid #164c31;
+
+    transition: 0.3s;
+}
+
+.history-card:hover {
+    background-color: #edf4ee;
+
+    transform: translateY(-5px);
+}
+
+.history-icon {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.history-card h3 {
+    color: #164c31;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.history-card p {
+    color: #626862;
+}
+
+
+/* =====================================================
+   WATERFALLS & HILL STATIONS
+===================================================== */
+
+.nature-section {
+    background-color: #edf4ee;
+}
+
+.nature-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.nature-card {
+    min-height: 300px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+}
+
+.nature-card::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+.waterfall {
+    background-image: url("images/jogfalls.jpg");
+}
+
+.waterfall2 {
+    background-image: url("images/abbeyfalls.jpg");
+}
+
+.hill {
+    background-image: url("images/coorg.jpg");
+}
+
+.hill2 {
+    background-image: url("images/chikmagalur.jpg");
+}
+
+.nature-content {
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    padding: 30px;
+}
+
+.nature-content .category {
+    color: #e8b83e;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+.nature-content h3 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.nature-content p {
+    color: #f1f1f1;
+}
+
+
+/* =====================================================
+   FAMOUS FOODS
+===================================================== */
+
+.food-section {
+    background-color: white;
+}
+
+.food-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.food-card {
+    background-color: #fffaf0;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #eee2c9;
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.food-number {
+    color: #c48a1a;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.food-card h3 {
+    color: #164c31;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+.food-card p {
+    color: #666;
+}
+
+
+/* =====================================================
+   IMAGE GALLERY
+===================================================== */
+
+.gallery-section {
+    background-color: #f1f5f0;
+}
+
+.gallery {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 260px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background-color: #ddd;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.image-caption {
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    padding: 20px;
+
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+.image-caption h3 {
+    font-size: 22px;
+}
+
+.image-caption p {
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   TRAVEL INFORMATION
+===================================================== */
+
+.travel-section {
+    background-color: white;
+}
+
+.travel-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.travel-box {
+    background-color: #f3f7f3;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #164c31;
+}
+
+.travel-icon {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.travel-box h3 {
+    color: #164c31;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+.travel-box p {
+    color: #626862;
+}
+
+.travel-box ul {
+    padding-left: 20px;
+
+    color: #626862;
+}
+
+.travel-box li {
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   TRAVEL CHECKLIST
+===================================================== */
+
+.checklist {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    padding: 30px;
+
+    background-color: #164c31;
+
+    color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.checklist h3 {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.check-items {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.check-items div {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    padding: 12px;
+
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background-color: #102f20;
+
+    color: white;
+
+    padding: 50px 8%;
+
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.footer-content > p {
+    color: #c5d0c8;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 12px;
+
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #e4b542;
+}
+
+.copyright {
+    font-size: 13px;
+
+    border-top: 1px solid #34513f;
+
+    padding-top: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   TABLET RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .header-content h1 {
+        font-size: 50px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .cards,
+    .history-grid,
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .check-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 700px) {
+
+    header {
+        min-height: 500px;
+    }
+
+    .header-content h1 {
+        font-size: 38px;
+    }
+
+    .header-content > p {
+        font-size: 17px;
+    }
+
+    nav {
+        flex-direction: column;
+
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .cards,
+    .history-grid,
+    .food-grid,
+    .nature-container,
+    .gallery,
+    .travel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 230px;
+    }
+
+    .check-items {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links a {
+        display: inline-block;
+
+        margin: 5px 8px;
+    }
+}
